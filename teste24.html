@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<body>
+    <!-- ---------------------------------- 1 ------------------------------------- -->
+    
+    <p id="demo">Paola feia.</p>
+
+    <button type="button"
+    onclick='document.getElementById("demo").innerHTML = "PAOLA GATINHA!"'>
+    REVERSE! </button>
+    <br> <br>
+
+    <!-- ---------------------------------- 2 ------------------------------------- -->
+
+    <button onclick="document.getElementById('cachorro').src='cachorrogrande.png'">
+    Faça o cachorro crescer</button>
+    <img id="cachorro" src="cachorrofilhote.png" style="width:100px">
+    <button onclick="document.getElementById('cachorro').src='cachorrofilhote.png'">
+    Faça o cachorro virar filhote</button>
+    <br> <br>
+
+    <!-- --------------------------------- 3 -------------------------------------- -->
+
+    <h3 id="texto">Cachorros filhotes são fofinhos.</h3>
+    <button type="button"
+    onclick="document.getElementById('texto').style.display='none'">
+    Clique aqui para ocultar a frase!</button>
+
+    <!-- --------------------------------- 4 -------------------------------------- -->
+    
+    <p id="soma"></p>
+    <script>document.getElementById("soma").innerHTML = 20 * 2; </script>
+    <script>
+        window.alert(20 * 2);
+    </script>
+
+    <script>
+        console.log(20 * 2);
+    </script>
+
+    <!-- ---------------------------------- 5 ------------------------------------- -->
+
+    <h2 id="color"></h2>
+
+    <script>
+    var colorName = "Roxo";
+    document.getElementById("color").innerHTML = colorName;
+    </script>
+
+    <!-- ----------------------------------- 6 ------------------------------------ -->
+
+    <script>
+        function subtraçao (num1, num2){
+            var resultado = num1 - num2;
+            return resultado;
+        }
+        subtraçao(10, 5);
+    </script>
+    
+    <!-- ------------------------------------ 7 ----------------------------------- -->
+    <p id="subtraçao"></p>
+
+    <script>
+    var x = umSubtraçao(10, 5);
+    function umSubtraçao(num1, num2) {
+    return num1 - num2;
+    }
+    document.getElementById("subtraçao").innerHTML = x;
+    </script> 
+
+    <!-- ------------------------------------ 8 ----------------------------------- -->
+        
+    <p id="horario1"></p>
+
+        <script>
+            var horario;
+            var hora = new Date().getHours();
+
+            if (hora <= 9){
+                horario = "Hora do café da manhã!";
+            }
+            else if (hora > 9){
+                horario = "Hora do almoço!";
+            }
+            else if (hora > 13){
+                horario = "Hora do café da tarde!";
+            }
+            else (hora >= 18);
+                horario = "Hora da janta!";
+            document.getElementById("horario1").innerHTML = horario;
+        </script>
+</body>
+</html>
